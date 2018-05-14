@@ -3,4 +3,4 @@ An implementation of the Broyden–Fletcher–Goldfarb–Shanno algorithm for so
 
 Line-Searches: Backtracking, StrongWolfe  
 Find 3D and Contour plots [here](https://simonbatzner.github.io/L-BFGS-Julia/)   
-Find a comparison against Julia's Optim.jl package in the notebook 'L-BFGS_Project_Comp.ipynb'  
+Find a comparison against Julia's Optim.jl package [here](https://github.com/simonbatzner/L-BFGS-Julia/blob/master/L-BFGS_Project_Comp.ipynb)   
