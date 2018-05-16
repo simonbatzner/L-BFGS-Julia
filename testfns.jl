@@ -45,3 +45,18 @@ function easom(x::Vector)
     d=[exp(-(x[1]-pi)^2-(x[2]-pi)^2)*cos(x[2])*(sin(x[1])+2*(x[1]-pi)*cos(x[1])),2*(x[2]-pi)*exp(-(x[2]-pi)^2-(x[1]-pi)^2)*cos(x[2])*cos(x[1])+exp(-(x[2]-pi)^2-(x[1]-pi)^2)*cos(x[1])*sin(x[2])]
     return F, d
 end
+
+function rastrigin(x::Vector)
+    #f=0 at x=all 0
+    # x ∈ [-5.12,5.12]
+    #n=dimension
+    n=size(x)[1]
+    g=zeros(n)
+    sum=0
+    for i=1:n
+        sum +=x[i]^2-10*cos(2*pi*x[i])
+        g[i]=2*(x[i]+10*pi*sin(2*pi*x[i]))
+    end
+    F=10*n+sum
+    return F,g
+end
