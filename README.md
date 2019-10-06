@@ -1,6 +1,8 @@
 # L-BFGS-Julia
 A fast implementation of the Broyden–Fletcher–Goldfarb–Shanno algorithm for solving large-scale nonlinear optimization problems in Julia with limited memory. 
 
+![L-BFGS on the Rosenbrock function](https://raw.githubusercontent.com/simonbatzner/L-BFGS-Julia/master/img/rosenborck_path.png)
+
 Line-Searches used: Backtracking, StrongWolfe  
 
 ## Visualization
